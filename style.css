@@ -1,10 +1,60 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
   width: 95%;
   margin: 0 auto;
   text-align: center;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hidden-bodypart {
+  display: none;
+}
+
+.letters-and-keys {
+  margin-top: 50px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.word {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.letter-field {
+  border-bottom: 1px solid #000;
+  width: 40px;
+  font-size: 30px;
+}
+
+.letter {
+  visibility: hidden;
+}
+
+.btn {
+  height: 40px;
+  width: 50px;
+  font-size: 18px;
+}
+
+.btn-inactive {
+  cursor: unset;
+  background-color: #eee;
+  border: none;
+  color: #999;
+}
+
+.keyboard {
+  width: 80%;
 }
