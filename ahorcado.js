@@ -10,7 +10,7 @@ $.when($.ready).then(() => {
 });
 
 const startGame = () => {
-  $('.game-result').removeClass('winner'||'looser').text('');
+  $('.game-result').removeClass('winner', 'looser').text('');
   $('.btn').removeClass('btn-inactive').attr('disabled', false);
 
   gsap.from('#head', {
