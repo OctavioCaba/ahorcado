@@ -45,7 +45,7 @@ $('.restart-btn').on('click', () => {
   $('.letter-field').remove();
   $('.btn').remove();
   $('.hidden-bodypart').css('display', 'none');
-  $('.game-result').removeClass('winner', 'looser').text('');
+  $('.game-result').removeClass('winner').removeClass('looser').text('');
   $('.btn').removeClass('btn-inactive').attr('disabled', false);
   mistakes = -1;
   startGame();
