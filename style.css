@@ -42,6 +42,10 @@ body {
   visibility: hidden;
 }
 
+.letter-guessed {
+  visibility: initial;
+}
+
 .btn {
   height: 40px;
   width: 50px;
@@ -57,4 +61,29 @@ body {
 
 .keyboard {
   width: 80%;
+}
+
+.game-result {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.winner {
+  color: forestgreen;
+}
+
+.looser {
+  color: red;
+}
+
+.restart-btn {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border-color: #000;
+  background-color: transparent;
+  font-size: 14px;
+  text-transform: uppercase;
+  left: 100px;
+  bottom: 10px;
+  position: absolute;
 }
