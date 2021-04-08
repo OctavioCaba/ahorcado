@@ -10,9 +10,6 @@ $.when($.ready).then(() => {
 });
 
 const startGame = () => {
-  $('.game-result').removeClass('winner', 'looser').text('');
-  $('.btn').removeClass('btn-inactive').attr('disabled', false);
-
   gsap.from('#head', {
     duration: 1,
     scale: 0.1,
@@ -48,6 +45,8 @@ $('.restart-btn').on('click', () => {
   $('.letter-field').remove();
   $('.btn').remove();
   $('.hidden-bodypart').css('display', 'none');
+  $('.game-result').removeClass('winner', 'looser').text('');
+  $('.btn').removeClass('btn-inactive').attr('disabled', false);
   mistakes = -1;
   startGame();
 });
